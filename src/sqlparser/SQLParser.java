@@ -19,23 +19,23 @@ public class SQLParser {
      */
     public static void main(String[] args) throws IOException {
         Parser data = new Parser();
-        String query = "SELECT * FROM Lagu JOIN Memutar using (idLagu);";
+//        String query = "SELECT * FROM Lagu JOIN Memutar using (idLagu);";
         Scanner input = new Scanner(System.in);
         Scanner x = new Scanner(System.in);
         Scanner y = new Scanner(System.in);
         
-//        System.out.print("SQLParser>");
-//        String query = input.nextLine();
+        System.out.print("SQLParser>");
+        String query = input.nextLine();
         if(data.parse(query)){
             System.out.println("\nSuccess exit code 0");
         }else{
             System.out.println("SQL ERROR.");
         }
         
-//        Runtime.getRuntime().exec("cls");
         int jawab = 0;
         int menu;
         do{
+//            Runtime.getRuntime().exec("clear");
             System.out.println("1. MENU 1");
             System.out.println("2. MENU 2");
             System.out.println("3. MENU 3");

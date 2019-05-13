@@ -29,11 +29,11 @@ public class nomor2 {
     }
     
     public int blockData(int BFR, int n){
-        return (n/BFR);
+        return (int) Math.ceil(n/BFR);
     }
     
     public int indeksData(int fanout, int n){
-        return (n/fanout);
+        return (int) Math.ceil(n/fanout);
     }
     
     public void menu2(){
